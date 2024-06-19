@@ -9,6 +9,8 @@ from langchain.agents import (
 )
 from langchain import hub
 
+from tools.tools import get_profile_url_tavily
+
 load_dotenv()
 def lookup(name: str) -> str:
     llm = ChatOpenAI(
@@ -43,5 +45,5 @@ def lookup(name: str) -> str:
 
 
 if __name__ == "__main__":
-    linkedin_url = lookup(name="Chaeyeon Shim")
+    linkedin_url = lookup(name="Chaeyeon Shim Data scientist")
     print(linkedin_url)
