@@ -12,6 +12,7 @@ langchain-openai = "*"
 black = "*"
 requests = "*"
 langchainhub = "*"
+flask = "*"
 
 [dev-packages]
 
